@@ -1,0 +1,104 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+
+    <style>
+        :root {
+            --primary: #1f3c5c;
+            --secondary: #5b6f82;
+            --light: #f7f7f7;
+            --dark: #222;
+            --max-width: 1100px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background: white;
+        }
+
+        main {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 2rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--secondary);
+        }
+
+        .section {
+            margin: 4rem 0;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <Header />
+
+    <main>
+        <slot />
+    </main>
+
+    <Footer />
+
+</body>
+</html>

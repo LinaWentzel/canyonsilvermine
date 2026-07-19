@@ -1,17 +1,101 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Canyon Silver Mine">
+
+    <section class="hero">
+
+        <h1>Canyon Silver Mine</h1>
+
+        <p>
+            A historic silver, lead and zinc property
+            located in Idaho's renowned Coeur d'Alene Mining District.
+        </p>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Welcome</h2>
+
+        <p>
+            Canyon Silver Mine is a historic mining property situated
+            within one of North America's most productive silver districts.
+            The project combines a rich mining heritage with modern
+            exploration techniques and geological understanding.
+        </p>
+
+        <p>
+            This website presents the history, geology, exploration
+            potential and supporting documentation relating to the
+            Canyon Silver property.
+        </p>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Explore the Site</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <h3>History</h3>
+
+                <p>
+                    Learn about the development of the mine and its role
+                    within the Silver Valley.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Geology</h3>
+
+                <p>
+                    Understand the geological setting and mineralisation
+                    associated with the property.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Exploration</h3>
+
+                <p>
+                    Discover how modern geophysical methods may help
+                    unlock further potential.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>Key Facts</h2>
+
+        <ul>
+
+            <li>
+                Located in the Coeur d'Alene Mining District, Idaho.
+            </li>
+
+            <li>
+                Historic producer of silver, lead and zinc.
+            </li>
+
+            <li>
+                Multiple vein systems identified.
+            </li>
+
+            <li>
+                Modern geophysical techniques may provide new insights
+                into the property's potential.
+            </li>
+
+        </ul>
+
+    </section>
+
+</MainLayout>

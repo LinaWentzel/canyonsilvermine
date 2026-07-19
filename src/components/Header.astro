@@ -1,0 +1,67 @@
+<header>
+    <nav>
+        <div class="logo">
+            Canyon Silver Mine
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/history">History</a></li>
+            <li><a href="/geology">Geology</a></li>
+            <li><a href="/silver-valley">Silver Valley</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/documents">Documents</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+header {
+    background: #1f3c5c;
+    color: white;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+</style>
